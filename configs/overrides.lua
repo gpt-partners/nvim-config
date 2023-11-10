@@ -25,18 +25,28 @@ M.treesitter = {
 M.mason = {
   ensure_installed = {
     "lua-language-server",
-    "typescript-language-server",
+    "vtsls",
     "html-lsp",
-    "prettier",
+    "prettierd",
     "stylua",
+    "isort",
+    "black",
+    "eslint_d",
   },
 }
 
 M.conform = {
   formatters_by_ft = {
+
     lua = { "stylua" },
     python = { "isort", "black" },
-    javascript = { { "prettierd", "prettier" } },
+    css = { { "prettierd" } },
+    html = { { "prettierd" } },
+    yaml = { { "prettierd" } },
+    json = { { "prettierd" } },
+    javascript = { { "prettierd" } },
+    typescript = { { "prettierd" } },
+    typescriptreact = { { "prettierd" } },
   },
   format_on_save = {
     timeout_ms = 500,
