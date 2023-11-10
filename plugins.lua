@@ -1,20 +1,21 @@
+local overrides = require "custom.configs.overrides"
+
 local plugins = {
-  {"github/copilot.vim", lazy = false},
+  {
+    "zbirenbaum/copilot.lua",
+    opts = overrides.copilot,
+  },
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        "vim",
-        "lua",
-        "html",
-        "css",
-        "javascript",
-        "typescript",
-        "tsx",
-        "json",
-        "bash"
-      },
-    },
+    opts = overrides.treesitter,
+  },
+  {
+    "williamboman/mason.nvim",
+    opts = overrides.mason,
+  },
+  {
+    "stevearc/conform.nvim",
+    opts = overrides.conform,
   },
 }
 
