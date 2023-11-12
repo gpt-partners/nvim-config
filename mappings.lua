@@ -9,7 +9,7 @@ M.general = {
       end,
       "Toggle transparency",
     },
-    ["D"] = {
+    ["<Leader>xx"] = {
       function()
         require("nvchad.tabufline").closeAllBufs()
       end,
