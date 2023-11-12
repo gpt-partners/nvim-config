@@ -20,6 +20,7 @@ M.treesitter = {
     "tsx",
     "json",
     "bash",
+    "python",
   },
 }
 M.mason = {
@@ -32,6 +33,7 @@ M.mason = {
     "isort",
     "black",
     "eslint_d",
+    "pyright",
   },
 }
 

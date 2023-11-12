@@ -8,6 +8,13 @@ local plugins = {
     import = "custom.plugins.dap",
   },
   {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require "plugins.configs.lspconfig"
+      require "custom.configs.lspconfig"
+    end,
+  },
+  {
     "zbirenbaum/copilot.lua",
     opts = overrides.copilot,
     cmd = { "Copilot" },
