@@ -25,6 +25,10 @@ local plugins = {
     "stevearc/conform.nvim",
     opts = overrides.conform,
   },
+  {
+    "echasnovski/mini.indentscope",
+    opts = overrides.indentscope,
+  },
 }
 
 return plugins
