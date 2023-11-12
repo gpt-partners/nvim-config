@@ -32,6 +32,7 @@ local plugins = {
     "stevearc/conform.nvim",
     opts = overrides.conform,
   },
+  { "preservim/nerdcommenter" },
   {
     "echasnovski/mini.indentscope",
     opts = overrides.indentscope,
