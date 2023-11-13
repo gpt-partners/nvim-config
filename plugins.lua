@@ -2,6 +2,9 @@ local overrides = require "custom.configs.overrides"
 
 local plugins = {
   {
+    import = "custom.plugins.copilot",
+  },
+  {
     import = "custom.plugins.neotest",
   },
   {
@@ -13,11 +16,6 @@ local plugins = {
       require "plugins.configs.lspconfig"
       require "custom.configs.lspconfig"
     end,
-  },
-  {
-    "zbirenbaum/copilot.lua",
-    opts = overrides.copilot,
-    cmd = { "Copilot" },
   },
   { "tpope/vim-fugitive", cmd = { "Git" } },
   {
