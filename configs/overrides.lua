@@ -21,6 +21,7 @@ M.treesitter = {
     "json",
     "bash",
     "python",
+    "yaml",
   },
 }
 M.mason = {
@@ -34,6 +35,7 @@ M.mason = {
     "black",
     "eslint_d",
     "pyright",
+    "yaml-language-server",
   },
 }
 
