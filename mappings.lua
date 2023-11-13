@@ -2,7 +2,7 @@ local M = {}
 
 M.general = {
   n = {
-    ["q"] = { "<cmd> qa! <CR>", "Quit" },
+    ["<leader>q"] = { "<cmd> qa! <CR>", "Quit" },
     [","] = { "<cmd> w <CR>", "Save file" },
     ["-"] = {
       function()
