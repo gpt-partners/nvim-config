@@ -9,9 +9,8 @@ return {
         enabled = true,
         auto_trigger = true,
         keymap = {
-          accept = "<tab>",
-          next = "<C-S-k>",
-          prev = "<C-S-j>",
+          accept = "<S-k>",
+          next = "<S-j>",
         },
       },
       panel = { enabled = false },
