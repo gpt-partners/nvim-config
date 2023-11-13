@@ -39,7 +39,6 @@ M.mason = {
 
 M.conform = {
   formatters_by_ft = {
-
     lua = { "stylua" },
     python = { "isort", "black" },
     css = { { "prettierd" } },
@@ -49,6 +48,11 @@ M.conform = {
     javascript = { { "prettierd" } },
     typescript = { { "prettierd" } },
     typescriptreact = { { "prettierd" } },
+  },
+  formatters = {
+    black = {
+      prepend_args = { "-l", 80 },
+    },
   },
   format_on_save = {
     timeout_ms = 500,
