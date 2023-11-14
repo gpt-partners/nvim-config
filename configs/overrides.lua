@@ -31,6 +31,7 @@ M.mason = {
     "eslint_d",
     "pyright",
     "yaml-language-server",
+    "python-lsp-server",
     "debugpy",
   },
 }
