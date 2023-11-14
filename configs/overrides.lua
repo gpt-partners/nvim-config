@@ -1,6 +1,9 @@
 local M = {}
 
 M.treesitter = {
+  highlight = {
+    enable = true,
+  },
   ensure_installed = {
     "vim",
     "lua",
@@ -13,6 +16,7 @@ M.treesitter = {
     "bash",
     "python",
     "yaml",
+    "dap_repl",
   },
 }
 M.mason = {
@@ -27,6 +31,7 @@ M.mason = {
     "eslint_d",
     "pyright",
     "yaml-language-server",
+    "debugpy",
   },
 }
 

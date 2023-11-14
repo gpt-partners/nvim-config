@@ -19,10 +19,6 @@ local plugins = {
   },
   { "tpope/vim-fugitive", cmd = { "Git" } },
   {
-    "nvim-treesitter/nvim-treesitter",
-    opts = overrides.treesitter,
-  },
-  {
     "williamboman/mason.nvim",
     opts = overrides.mason,
   },
@@ -34,6 +30,17 @@ local plugins = {
   {
     "echasnovski/mini.indentscope",
     opts = overrides.indentscope,
+  },
+  {
+    "nvim-treesitter/nvim-treesitter",
+
+    dependencies = {
+      "LiadOz/nvim-dap-repl-highlights",
+      config = function()
+        require("nvim-dap-repl-highlights").setup()
+      end,
+    },
+    opts = overrides.treesitter,
   },
 }
 

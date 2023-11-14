@@ -1,6 +1,7 @@
 return {
   "mfussenegger/nvim-dap",
   config = function(_, opts)
+    require("dap-python").setup "/root/.venv/debugpy/bin/python"
     require("dap-vscode-js").setup {
       node_path = "/usr/local/bin/node",
       debugger_path = "/root/.local/share/nvim/mason/bin/js-debug-adapter",
@@ -33,14 +34,9 @@ return {
 
   dependencies = {
     {
-      "LiadOz/nvim-dap-repl-highlights",
-      config = function()
-        require("nvim-dap-repl-highlights").setup()
-      end,
-    },
-    {
       "mxsdev/nvim-dap-vscode-js",
     },
+    { "mfussenegger/nvim-dap-python" },
     {
       "rcarriga/nvim-dap-ui",
       keys = {
