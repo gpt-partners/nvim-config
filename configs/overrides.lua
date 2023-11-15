@@ -33,6 +33,8 @@ M.mason = {
     "yaml-language-server",
     "python-lsp-server",
     "debugpy",
+    "docker-compose-language-service",
+    "dockerfile-language-server",
   },
 }
 
