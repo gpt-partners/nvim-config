@@ -1,7 +1,7 @@
 local M = {}
 
 M.ui = {
-  theme = "tokyonight",
+  theme = "monochrome",
   statusline = {
     theme = "vscode_colored",
   },
