@@ -31,7 +31,7 @@ M.mason = {
     "eslint_d",
     "pyright",
     "yaml-language-server",
-    "python-language-server",
+    "python-lsp-server",
     "debugpy",
     "docker-compose-language-service",
     "dockerfile-language-server",
