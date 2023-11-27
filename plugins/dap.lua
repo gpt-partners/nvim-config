@@ -1,7 +1,7 @@
 return {
   "mfussenegger/nvim-dap",
   config = function(_, opts)
-    require("dap-python").setup "/root/.venv/debugpy/bin/python"
+    require("dap-python").setup "/root/.venv/bin/python"
     require("dap-vscode-js").setup {
       node_path = "/usr/local/bin/node",
       debugger_path = "/root/.local/share/nvim/mason/bin/js-debug-adapter",
