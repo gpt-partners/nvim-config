@@ -22,6 +22,7 @@ M.general = {
 M.nvterm = {
   plugin = true,
   t = {
+    ["<Esc>"] = { "<C-\\><C-n>", "Exit terminal mode" },
     ["<C-t>"] = {
       function()
         require("nvterm.terminal").toggle "float"
